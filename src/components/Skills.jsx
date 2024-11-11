@@ -16,7 +16,7 @@ const Skills = () => {
           </p>
           {/* BIOGRAPHY QUOTE */}
           <span className="italic text-sm lg:text-lg text-justify">
-           "The best way to predict the future is to invent it."<span className="text-red-500 text-1xl"> Alan Kay</span> 
+           The best way to predict the future is to invent it.<span className="text-red-500 text-1xl"> Alan Kay</span> 
           </span>
           
         </div>

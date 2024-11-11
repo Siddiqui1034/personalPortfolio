@@ -23,7 +23,7 @@ const ContactMe = () => {
         publicKey: process.env.NEXT_PUBLIC_KEY,
       })
       .then(
-        (result) => {
+        () => {
           setSuccess(true)
           form.current.reset()
           console.log('SUCCESS!');
