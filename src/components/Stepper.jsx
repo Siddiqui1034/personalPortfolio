@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 
 const Stepper = ({ steps }) => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -16,9 +16,9 @@ const Stepper = ({ steps }) => {
   return (
     <div className="h-full lg:h-full flex flex-col items-center justify-center lg:m-20 lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
       <div className="w-1/3 lg:h-full lg:p-24 rounded-md md:bg-red-400">
-        {steps.map(({ label, content }, index) => {
+        {steps.map(({ label}, index) => {
           return (
-            <div key={label} className="stepper-container">
+            <div key={`label_${index}`} className="stepper-container">
               <div
                 className={`step-number ${
                   currentStep >= index ? "active" : ""
@@ -41,9 +41,9 @@ const Stepper = ({ steps }) => {
 
       <div  className="w-2/3 lg:h-full rounded-md lg:p-24 bg-red-100">
         <div>
-          {steps[currentStep].content.map(({ title, desc, date, company }) => {
+          {steps[currentStep].content.map(({ title, desc, date, company }, index) => {
             return (
-              <>
+              <Fragment key={`exp_${index}`}>
                 <div className="bg-white p-2 text-center font-semibold rounded-md">
                   {title}
                 </div>
@@ -54,7 +54,7 @@ const Stepper = ({ steps }) => {
                 <div className="pb-2 px-2 rounded text-black text-sm font-semibold w-fit">
                   {company}
                 </div>
-              </>
+              </Fragment>
             );
           })}
         </div>
