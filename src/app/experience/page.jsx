@@ -10,34 +10,35 @@ const Experience = () => {
       content:  [
         {
           title:"React Developer",
-          desc: "Developed and maintained React Web application, following best practices for writing reusable components and worked on state management using Context API and Redux library.",
+          desc: "Developed and maintained React Web application, following best practices for writing reusable components and worked on state management using Context API and Redux library. ",
           date: "2021 - Present",
           company: "P2P System Pvt Ltd"
         }
       ]                
     },
     {
+      label: "Web Development Training",
+      content:  [
+        {
+          title:"Transition in Career",
+          desc: "A Career Transition in which Learned Front Technologies, created Basic Javascript Projects, enhanced my technical skillset.",
+          date: "2021 - 2021",
+          company: "Maxit"
+        }
+      ]                
+    }, 
+    {
       label: "Support Engineer",
       content:  [
         {
           title:"Support Engineer",
-          desc: "Analyse and make recommendations for improvements, and execute necessary maintenance to enhance the user experience.",
-          date: " 2019 - 2021",
-          company: "Myva Technologies"
+          desc: "Provided technical support to users experiencing issues with the frontend of web applications. Identify and document bugs or issues in the frontend code, including visual discrepancies and functional errors.",
+          date: "2016 - 2021",
+          company: "Kaiser Computer Pvt. Ltd."
         }
       ]                
     },
-    {
-      label: "Reporting Analyst",
-      content:  [
-        {
-          title:"Reporting Analyst",
-          desc: "Creating and maintaining reports, ensuring data accuracy, and visualizing data treds for presentations. ",
-          date: "2016 - 2019",
-          company: "Compact India Pvt Ltd"
-        }
-      ]                
-    }, 
+    
   ]
 
   return (

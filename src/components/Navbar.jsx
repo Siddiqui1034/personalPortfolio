@@ -95,16 +95,13 @@ const Navbar = () => {
 
       {/* Social Icon */}
       <div className="hidden md:flex gap-4 w-1/3 justify-center">
-        <Link href="#">
+        <Link href="https://github.com/Siddiqui103">
           <Image src="/github.png" alt="" width={24} height={24} />
         </Link>
-        <Link href="#">
+        <Link href="/contact">
           <Image className="rounded-full" src="/mail.png" alt="" width={24} height={24} />
         </Link>
-        <Link href="#">
-          <Image src="/instagram.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="#">
+        <Link href="www.linkedin.com/in/siddiqui1411">
           <Image src="/linkedin.png" alt="" width={24} height={24} />
         </Link>
       </div>
